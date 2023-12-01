@@ -2,8 +2,8 @@
     
 On initial review it appears that a ReentrantReadWriteLock() methods are appropriate.
 
-1. readLock() can be used for gets.
-2. writeLock() can be used for product and review adds, deletes, and updates. Using the same lock for the review and product is appropriate.
+1. readLock() can be used for all product and review get methods.
+2. writeLock() can be used for product and review add, delete, and update methods. Using the same lock for the review and product is appropriate.
 
 Added the ReadWrite member variable to create the read and write objects and added the read and write members.
 
