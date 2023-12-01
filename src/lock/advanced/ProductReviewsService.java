@@ -138,27 +138,27 @@ public class ProductReviewsService {
 
 
     Lock getLockForAddProduct() {
-        // Add code here
+        return this.writeLock;
     }
 
     Lock getLockForRemoveProduct() {
-        // add code here
+        return this.writeLock;
     }
 
     Lock getLockForAddProductReview() {
-        // add code here
+        return this.writeLock;
     }
 
     Lock getLockForGetAllProductReviews() {
-        // add code here
+        return this.readLock;
     }
 
     Lock getLockForGetLatestReview() {
-        // add code here
+        return this.readLock;
     }
 
     Lock getLockForGetAllProductIdsWithReviews() {
-        // add code here
+        return this.readLock;
     }
 }
 
