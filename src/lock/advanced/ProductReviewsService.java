@@ -6,7 +6,10 @@ import java.util.concurrent.locks.*;
 public class ProductReviewsService {
     private final HashMap<Integer, List<String>> productIdToReviews;
 
-    // Create your member variables here
+    private ReadWriteLock lock = new ReentrantReadWriteLock();
+
+    private Lock readLock = lock.readLock(); // Returns lock for reading
+    private Lock writeLock = lock.writeLock(); // Returns lock for writing  s
 
 
 
