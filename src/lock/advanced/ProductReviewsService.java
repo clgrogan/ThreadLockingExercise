@@ -9,7 +9,7 @@ public class ProductReviewsService {
     private ReadWriteLock lock = new ReentrantReadWriteLock();
 
     private Lock readLock = lock.readLock(); // Returns lock for reading
-    private Lock writeLock = lock.writeLock(); // Returns lock for writing  s
+    private Lock writeLock = lock.writeLock(); // Returns lock for writing
 
 
 
